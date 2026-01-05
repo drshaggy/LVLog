@@ -1,7 +1,8 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="25008000">
-	<Property Name="NI.LV.All.SaveVersion" Type="Str">25.0</Property>
+<Project Type="Project" LVVersion="20008000">
+	<Property Name="NI.LV.All.SaveVersion" Type="Str">20.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
+	<Property Name="NI.Project.Description" Type="Str"></Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -18,7 +19,9 @@
 			</Item>
 			<Item Name="Named Loggers.vi" Type="VI" URL="../Examples/Named Loggers.vi"/>
 		</Item>
-		<Item Name="Get Output Dir Path.vi" Type="VI" URL="../Get Output Dir Path.vi"/>
+		<Item Name="Helper Methods" Type="Folder">
+			<Item Name="Get Output Dir Path.vi" Type="VI" URL="../Get Output Dir Path.vi"/>
+		</Item>
 		<Item Name="LV Logging.lvlib" Type="Library" URL="../Source/LV Logging.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build">
@@ -32,8 +35,8 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{515CFB0F-04D5-4EDB-883A-FD660EF6DFB8}</Property>
-				<Property Name="Bld_version.build" Type="Int">4</Property>
-				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Bld_version.build" Type="Int">2</Property>
+				<Property Name="Bld_version.minor" Type="Int">1</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Destination[0].destName" Type="Str">LV Logging.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/LV Logging/LV Logging.lvlibp</Property>
@@ -43,7 +46,7 @@
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/LV Logging</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{97933388-538A-4A0E-BF3D-2FE70CEFF412}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{F67AF3CA-3381-479D-955C-5A9E6969207C}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/LV Logging.lvlib</Property>

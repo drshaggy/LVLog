@@ -1,4 +1,6 @@
-05/01/2026 16:08 [instr] [ERROR] instr failed
-05/01/2026 16:08 [controller] [WARN] WARN3333
-05/01/2026 16:08 [controller] [ERROR] ERROR44444
-05/01/2026 16:08 [controller] [FATAL] FATAL55555555
+05/01/26 18:53:41.352 [instr] [ERROR] instr failed
+05/01/26 18:53:41.352 [controller] [DEBUG] DEBUG1
+05/01/26 18:53:41.352 [controller] [INFO] INFO222
+05/01/26 18:53:41.352 [controller] [WARN] WARN3333
+05/01/26 18:53:41.352 [controller] [ERROR] ERROR44444
+05/01/26 18:53:41.352 [controller] [FATAL] FATAL55555555
