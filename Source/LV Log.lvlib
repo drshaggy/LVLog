@@ -14,7 +14,6 @@
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 		<Item Name="Registry FGV.vi" Type="VI" URL="../Registry FGV.vi"/>
 		<Item Name="Registry.lvclass" Type="LVClass" URL="../Registry/Registry.lvclass"/>
-		<Item Name="Logger.lvclass" Type="LVClass" URL="../Logger/Logger.lvclass"/>
 	</Item>
 	<Item Name="Type Defs" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">1</Property>
@@ -43,4 +42,5 @@
 		<Item Name="TDMS Sink.lvclass" Type="LVClass" URL="../Sinks/TDMS Sink/TDMS Sink.lvclass"/>
 		<Item Name="Queue Sink.lvclass" Type="LVClass" URL="../Sinks/Queue Sink/Queue Sink.lvclass"/>
 	</Item>
+	<Item Name="Logger.lvclass" Type="LVClass" URL="../Logger/Logger.lvclass"/>
 </Library>
