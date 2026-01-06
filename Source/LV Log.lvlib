@@ -37,10 +37,10 @@
 		<Item Name="Fatal.vi" Type="VI" URL="../Log/Fatal.vi"/>
 	</Item>
 	<Item Name="Sinks" Type="Folder">
-		<Item Name="File Sink.lvclass" Type="LVClass" URL="../File Sink/File Sink.lvclass"/>
-		<Item Name="Sink.lvclass" Type="LVClass" URL="../Sink/Sink.lvclass"/>
-		<Item Name="G-CLI Sink.lvclass" Type="LVClass" URL="../G-CLI Sink/G-CLI Sink.lvclass"/>
-		<Item Name="TDMS Sink.lvclass" Type="LVClass" URL="../TDMS/TDMS Sink.lvclass"/>
-		<Item Name="Queue Sink.lvclass" Type="LVClass" URL="../Queue Sink/Queue Sink.lvclass"/>
+		<Item Name="File Sink.lvclass" Type="LVClass" URL="../Sinks/File Sink/File Sink.lvclass"/>
+		<Item Name="Sink.lvclass" Type="LVClass" URL="../Sinks/Sink/Sink.lvclass"/>
+		<Item Name="G-CLI Sink.lvclass" Type="LVClass" URL="../Sinks/G-CLI Sink/G-CLI Sink.lvclass"/>
+		<Item Name="TDMS Sink.lvclass" Type="LVClass" URL="../Sinks/TDMS Sink/TDMS Sink.lvclass"/>
+		<Item Name="Queue Sink.lvclass" Type="LVClass" URL="../Sinks/Queue Sink/Queue Sink.lvclass"/>
 	</Item>
 </Library>
