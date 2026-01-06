@@ -4,6 +4,7 @@
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
 	<Item Name="My Computer" Type="My Computer">
+		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.tcp.enabled" Type="Bool">false</Property>
@@ -17,17 +18,25 @@
 			<Item Name="Output" Type="Folder" URL="../Examples/Output">
 				<Property Name="NI.DISK" Type="Bool">true</Property>
 			</Item>
+			<Item Name="File Example.vi" Type="VI" URL="../Examples/File Example.vi"/>
 			<Item Name="G-CLI Example.vi" Type="VI" URL="../Examples/G-CLI Example.vi"/>
-			<Item Name="Named Loggers.vi" Type="VI" URL="../Examples/Named Loggers.vi"/>
+			<Item Name="Custom Sink.lvclass" Type="LVClass" URL="../Examples/Custom Sink/Custom Sink.lvclass"/>
 		</Item>
 		<Item Name="Helper Methods" Type="Folder">
 			<Item Name="Get Output Dir Path.vi" Type="VI" URL="../Helper Methods/Get Output Dir Path.vi"/>
+		</Item>
+		<Item Name="Testing" Type="Folder">
+			<Item Name="Singleton.lvclass" Type="LVClass" URL="../Testing/Singleton/Singleton.lvclass"/>
+			<Item Name="Basic Class.lvclass" Type="LVClass" URL="../Testing/Basic Class/Basic Class.lvclass"/>
 		</Item>
 		<Item Name="Tooling" Type="Folder">
 			<Item Name="LV Log.vipb" Type="Document" URL="../Tooling/LV Log.vipb"/>
 			<Item Name="Post Source Distribution.vi" Type="VI" URL="../Tooling/Post Source Distribution.vi"/>
 		</Item>
 		<Item Name="LV Logging.lvlib" Type="Library" URL="../Source/LV Logging.lvlib"/>
+		<Item Name="Quick Start.vi" Type="VI" URL="../Examples/Quick Start.vi"/>
+		<Item Name="Singleton.lvlib" Type="Library" URL="../Source/Singleton/Singleton.lvlib"/>
+		<Item Name="Custom Example.vi" Type="VI" URL="../Examples/Custom Example.vi"/>
 		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="LVLog PPL" Type="Packed Library">
