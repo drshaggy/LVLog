@@ -1,6 +1,7 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Library LVVersion="20008000">
 	<Property Name="NI.Lib.Icon" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!)O!!!*Q(C=\&gt;7R43N"&amp;)8B9`1#5O=%S#W=%NA7X-*NA-#%$NX#T6Z!:.'"7\ANO!7X90Y:2B:)C(V[!E(!,N?MT_T?_&gt;A&gt;,6,@LK5`/M^N$R^O`TZ_PHR^X@4N_,H^P/HY\PDM^?_/N]-0ZJ`T`_`YT+&lt;@\8@\XGU\OUC`@-UOV&amp;Z%6&amp;&amp;*"77VK=Z&amp;8O2&amp;8O2&amp;8O2*HO2*HO2*HO2"(O2"(O2"(O1G.\H*47ZSE`?&gt;8/1C&amp;TGE9P*CIK*JU;!Y'9K+D]*4?!J0Y?'L#E`B+4S&amp;J`"QCAJ0Y3E]B;@Q=*E+4_%J0)7H].#K3[LPZ(A+$_W6?"*0YEE]C9=JF8A31$*:UDBJ!E0*9(+1?"*0YO&amp;1C3@R**\%EXA96O**0)EH]31?,OFX*&lt;OG\?2Y;+0!%XA#4_!*0,27Y!E]A3@Q""[G5_!*0!%CG$"I$E("2=%*Q:@!%XDYJ=!4?!*0Y!E]$05H&amp;0X/.%X&lt;S@%9D`%9D`%9$SVE0-:D0-:D0,36]2C0]2C0]4#6D-&gt;YD-&gt;!T+2-,^0-8'B/-I(R]..8C`N4SCZRX[7R?$57J=:CUVB%'IN$Y[&amp;L0%S.B[2R]T6OKM&lt;.ULA*'H_="FI$IT'*RM8N2*XY0&amp;)(;E`NK!WVJC:K23X&lt;J:^]YOFUUP&amp;YV/&amp;QU([`VW[XUW;TU8K^VD2.7KV77C[8F^@!,@PFB@$S8NJSX/PO:L'&gt;`F*0V/.C?X_TO)R28`3`^!?]'X7FVXWZ2]^8-=7N!!!!!!</Property>
+	<Property Name="NI.Lib.SourceVersion" Type="Int">536903680</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.SortType" Type="Int">3</Property>
@@ -41,6 +42,7 @@
 		<Item Name="G-CLI Sink.lvclass" Type="LVClass" URL="../Sinks/G-CLI Sink/G-CLI Sink.lvclass"/>
 		<Item Name="TDMS Sink.lvclass" Type="LVClass" URL="../Sinks/TDMS Sink/TDMS Sink.lvclass"/>
 		<Item Name="Queue Sink.lvclass" Type="LVClass" URL="../Sinks/Queue Sink/Queue Sink.lvclass"/>
+		<Item Name="Rotating File Sink.lvclass" Type="LVClass" URL="../Sinks/Rotating File Sink.lvclass"/>
 	</Item>
 	<Item Name="Logger.lvclass" Type="LVClass" URL="../Logger/Logger.lvclass"/>
 </Library>
