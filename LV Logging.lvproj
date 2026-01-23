@@ -28,8 +28,14 @@
 			<Item Name="Get Output Dir Path.vi" Type="VI" URL="../Helper Methods/Get Output Dir Path.vi"/>
 		</Item>
 		<Item Name="Testing" Type="Folder">
-			<Item Name="Singleton.lvclass" Type="LVClass" URL="../Testing/Singleton/Singleton.lvclass"/>
+			<Item Name="Helper Methods" Type="Folder">
+				<Item Name="Log Regex Checker.vi" Type="VI" URL="../Testing/Helper Methods/Log Regex Checker.vi"/>
+				<Item Name="Get Log Text Array From Log File.vi" Type="VI" URL="../Testing/Helper Methods/Get Log Text Array From Log File.vi"/>
+			</Item>
 			<Item Name="Basic Class.lvclass" Type="LVClass" URL="../Testing/Basic Class/Basic Class.lvclass"/>
+			<Item Name="Registry.lvclass" Type="LVClass" URL="../Testing/Registry/Registry.lvclass"/>
+			<Item Name="G-CLI Sink.lvclass" Type="LVClass" URL="../Testing/G-CLI Sink/G-CLI Sink.lvclass"/>
+			<Item Name="File Sink.lvclass" Type="LVClass" URL="../Testing/File Sink/File Sink.lvclass"/>
 		</Item>
 		<Item Name="Tooling" Type="Folder">
 			<Item Name="LV Log.vipb" Type="Document" URL="../Tooling/LV Log.vipb"/>
@@ -37,7 +43,7 @@
 		</Item>
 		<Item Name="LV Log.lvlib" Type="Library" URL="../Source/LV Log.lvlib"/>
 		<Item Name="Quick Start.vi" Type="VI" URL="../Examples/Quick Start.vi"/>
-		<Item Name="Singleton.lvlib" Type="Library" URL="../Source/Singleton/Singleton.lvlib"/>
+		<Item Name="Provider.lvlib" Type="Library" URL="../Source/Provider/Provider.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
@@ -92,20 +98,14 @@
 				<Item Name="Compare Two Paths.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Compare Two Paths.vi"/>
 				<Item Name="Get System Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/sysdir.llb/Get System Directory.vi"/>
 				<Item Name="System Directory Type.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/sysdir.llb/System Directory Type.ctl"/>
-				<Item Name="Test Case.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Astemes/LUnit/Test Case.lvclass"/>
-				<Item Name="1D String Array to Delimited String.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/1D String Array to Delimited String.vi"/>
-				<Item Name="NI_Data Type.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/Data Type/NI_Data Type.lvlib"/>
 				<Item Name="Get LV Class Name.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Name.vi"/>
+				<Item Name="Get File Extension.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Get File Extension.vi"/>
+				<Item Name="Test Case.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Astemes/LUnit/Test Case.lvclass"/>
+				<Item Name="LUnit Runnable.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Astemes/LUnit/LUnit Runnable.lvclass"/>
+				<Item Name="NI_Data Type.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/Data Type/NI_Data Type.lvlib"/>
+				<Item Name="1D String Array to Delimited String.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/1D String Array to Delimited String.vi"/>
 				<Item Name="Test Suite.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Astemes/LUnit/Test Suite.lvclass"/>
 				<Item Name="Get LV Class Path.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Path.vi"/>
-				<Item Name="LUnit Runnable.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Astemes/LUnit/LUnit Runnable.lvclass"/>
-				<Item Name="Get File Extension.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Get File Extension.vi"/>
-				<Item Name="LUnit Advanced Assertions.lvlib" Type="Library" URL="/&lt;vilib&gt;/Astemes/LUnit/Palette/Advanced Assertions/LUnit Advanced Assertions.lvlib"/>
-				<Item Name="Equal Functor.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Comparison/Equal/Equal Functor/Equal Functor.lvclass"/>
-				<Item Name="Equal Comparable.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/Comparison/Equal/Equal Comparable/Equal Comparable.lvclass"/>
-				<Item Name="Search Unsorted 1D Array.vim" Type="VI" URL="/&lt;vilib&gt;/Array/Search Unsorted 1D Array.vim"/>
-				<Item Name="Search Unsorted 1D Array Core.vim" Type="VI" URL="/&lt;vilib&gt;/Array/Helpers/Search Unsorted 1D Array Core.vim"/>
-				<Item Name="Equals.vim" Type="VI" URL="/&lt;vilib&gt;/Comparison/Equals.vim"/>
 			</Item>
 			<Item Name="wsock32.dll" Type="Document" URL="wsock32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
