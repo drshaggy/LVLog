@@ -10,9 +10,11 @@ readonly GCLI_URL="https://github.com/G-CLI/G-CLI/releases/download/v3.0.1/wires
 readonly GCLI_SHA256="89c77ac86efb6d88bbc4c02658f76ddc23bbedc194cdbaae837771192503991b"
 readonly LUNIT_URL="https://github.com/astemes/astemes-lunit/releases/download/v2.0.13/astemes_lib_lunit-2.0.13.6.vip"
 readonly LUNIT_SHA256="8c747d9fd57ef7fb21d3e3d9c3a59fed3d201843ef7d19daac54e3f564908d46"
-readonly LUNIT_CLI_URL="https://github.com/astemes/astemes-lunit-cli/releases/download/v1.6.2/astemes_lib_lunit_cli-1.6.2.23.vip"
-readonly LUNIT_CLI_SHA256="fbffd4fbffea99348723f221dbeaf70d47af680de930cc0006a19012a62737c1"
-readonly LUNIT_CLI_SYSTEM_PACKAGE="astemes_lib_lunit_cli_system-1.6.2.23.vip"
+# LUnit CLI 1.6.x loads kernel32.dll while resolving relative paths, so it
+# cannot initialise in the Linux LabVIEW container. CI supplies absolute paths.
+readonly LUNIT_CLI_URL="https://github.com/astemes/astemes-lunit-cli/releases/download/v1.5.6/astemes_lib_lunit_cli-1.5.6.23.vip"
+readonly LUNIT_CLI_SHA256="3fa243003a8af8a80abeadf32c886dbdf069b635edfd40bc01842451e4a8dbea"
+readonly LUNIT_CLI_SYSTEM_PACKAGE="astemes_lib_lunit_cli_system-1.5.6.23.vip"
 
 download_and_verify() {
   local name="$1"
