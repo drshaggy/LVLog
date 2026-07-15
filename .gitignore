@@ -1,2 +1,6 @@
 *.lvlps
 *aliases
+.ci/
+build-logs/
+builds/
+test-results/
