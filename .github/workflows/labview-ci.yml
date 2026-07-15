@@ -1,4 +1,5 @@
 name: LabVIEW CI
+run-name: LabVIEW container CI • ${{ github.event_name }} • ${{ github.ref_name }}
 
 on:
   pull_request:
@@ -51,12 +52,39 @@ jobs:
 
       - name: Upload LabVIEW outputs
         if: always()
+        id: labview-artifact
         uses: actions/upload-artifact@v4
         with:
-          name: lvlog-labview-2026q1
+          name: lvlog-labview-2026q1-${{ github.run_id }}
           if-no-files-found: warn
-          retention-days: 14
+          retention-days: 90
           path: |
             builds/**/*.lvlibp
             build-logs/**
             test-results/**
+
+      - name: Publish durable run evidence
+        if: always()
+        env:
+          ARTIFACT_DIGEST: ${{ steps.labview-artifact.outputs.artifact-digest }}
+          ARTIFACT_URL: ${{ steps.labview-artifact.outputs.artifact-url }}
+        run: |
+          {
+            echo
+            echo "## CI evidence"
+            echo
+            echo "- Run: [${GITHUB_RUN_ID}](${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID})"
+            echo "- Commit: \`${GITHUB_SHA}\`"
+            if [[ -n "$ARTIFACT_DIGEST" ]]; then
+              echo "- Artifact SHA-256: \`${ARTIFACT_DIGEST}\`"
+            fi
+            if [[ -n "$ARTIFACT_URL" ]]; then
+              echo "- Artifact: [PPL, XML report, and logs (GitHub access required)](${ARTIFACT_URL})"
+            fi
+            echo
+            echo "Artifact contents include:"
+            echo
+            echo "- \`builds/LV Logging/LVLog PPL/LVLog.lvlibp\`"
+            echo "- \`test-results/lunit.xml\`"
+            echo "- \`build-logs/\`"
+          } >> "$GITHUB_STEP_SUMMARY"
