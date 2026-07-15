@@ -89,10 +89,6 @@ install_lunit_cli_operation() {
   # LabVIEWCLI scans /usr/local/natinst/nilvcli/Operations on Linux, while the
   # image's operation support files are stored under share/nilvcli.
   if [[ "$(basename "$cli_root")" == "nilvcli" ]]; then
-    if [[ ! -e "/usr/local/natinst/nilvcli" ]]; then
-      ln -s "$cli_root" "/usr/local/natinst/nilvcli"
-    fi
-
     # LUnit's source uses the portable <nishared>/LabVIEW CLI path. Provide
     # aliases for both Linux nishared layouts used by NI packages.
     ln -sfn "$cli_root" "/usr/local/natinst/LabVIEW CLI"
@@ -128,6 +124,11 @@ fi
 install_application_payload "g-cli"
 install_application_payload "lunit"
 install_lunit_cli_operation
+
+run_labview_cli "Mass compile LUnit CLI operation" \
+  -OperationName MassCompile \
+  -DirectoryToCompile "/usr/local/natinst/nilvcli/Operations/LUnitCLI" \
+  -LogFilePath "${BUILD_LOG_ROOT}/mass-compile-lunit-cli.log"
 
 run_labview_cli "Mass compile source" \
   -OperationName MassCompile \
